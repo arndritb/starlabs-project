@@ -128,6 +128,9 @@ text-align: center;
 }
 `;
 
+const SocialIcons = styled.div`
+
+`
 
 
 const Main = () => {
@@ -145,6 +148,8 @@ const Main = () => {
                 <Work>// work</Work>
                 <Contact>// contact</Contact>
             </Sidebar>
+
+            <SocialIcons>here</SocialIcons>
 
         </Box>
     )
