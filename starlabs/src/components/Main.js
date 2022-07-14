@@ -129,7 +129,6 @@ text-align: center;
 `;
 
 const SocialIcons = styled.div`
-
 `
 
 
