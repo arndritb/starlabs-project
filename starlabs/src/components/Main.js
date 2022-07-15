@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-
+import SocialIcons from '../subComponents/SocialIcons';
 
 const Box = styled.div`
 background-color: #181818;
@@ -125,8 +125,6 @@ text-align: center;
 }
 `;
 
-const SocialIcons = styled.div`
-`
 
 
 const Main = () => {
@@ -145,8 +143,9 @@ const Main = () => {
                 <Contact>// contact</Contact>
             </Sidebar>
 
-            <SocialIcons>here</SocialIcons>
+            
 
+            <SocialIcons />
         </Box>
     )
 }
