@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import SocialIcons from '../subComponents/SocialIcons';
 import { useRef } from 'react';
-
+import Landing from './Landing';
 
 const Box = styled.div`
 background-color: #181818;
@@ -18,8 +18,6 @@ bottom: 0;
 display: flex;
 flex-direction: column;
 font-family: sf-mono;
-
-
 `;
 
 const Logo = styled.div`
@@ -54,7 +52,6 @@ align-items: center;
 width: 100%;
 margin-top: 10vh;
 font-weight: 400;
-
 `
 
 const About = styled.div`
@@ -130,10 +127,10 @@ text-align: center;
 }
 `;
 
-const Landing = styled.div`
-height:100vh;
-background-color: #caf0f8;
-`
+// const Landing = styled.div`
+// height:100vh;
+// background-color: #caf0f8;
+// `
 const Aboutpage = styled.div`
 height:100vh;
 background-color: #d8f3dc;
@@ -151,6 +148,8 @@ height:100vh;
 background-color: #ffc6ff;
 `
 
+
+
 const Main = () => {
 
     const landingPage = useRef(null);
@@ -166,13 +165,18 @@ const Main = () => {
         })
     }
 
+
+
+
     return(
         <>
         <Box>
+            
             <Logo>
-                <Name onClick={() => scrollToSection(landingPage)} >Arndrit</Name>
+                <Name>Arndrit</Name>
                 <Profession>Web Developer</Profession>
             </Logo>
+            
 
             
             <Sidebar>
@@ -184,10 +188,14 @@ const Main = () => {
 
             
 
+            
             <SocialIcons />
         </Box>
 
-            <Landing ref={landingPage}>Landing</Landing>
+        
+
+            <Landing ref={landingPage} />
+            
             <Aboutpage ref={Aboutpagee} >About</Aboutpage>
             <Skillspage ref={Skillspagee} >Skills</Skillspage>
             <Workpage ref={Workpagee} >Work</Workpage>

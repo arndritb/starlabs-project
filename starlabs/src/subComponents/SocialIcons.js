@@ -15,7 +15,7 @@ position: relative;
 const SocialIcons = () => {
     return(
         <Icons>
-            <Github width={25} height={25} />
+            <Github width={25} height={25}  />
             <Twitter width={25} height={25}/>
             <Facebook width={25} height={25} />
         </Icons>
