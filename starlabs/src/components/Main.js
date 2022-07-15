@@ -16,9 +16,8 @@ bottom: 0;
 display: flex;
 flex-direction: column;
 font-family: sf-mono;
+
 `;
-
-
 
 const Logo = styled.div`
 background-color: black;
@@ -32,13 +31,14 @@ font-size: 2.7rem;
 text-align: center;
 justify-content: center;
 margin-top: 4rem;
-
+font-weight: 600;
 `
 
 const Profession = styled.h6`
 text-align: center;
 margin-top: 3rem;
 font-size: 0.9rem;
+font-weight: 500;
 `
 
 const Sidebar = styled.div`
@@ -49,14 +49,14 @@ flex-direction: column;
 align-items: center;
 width: 100%;
 margin-top: 10vh;
-
+font-weight: 400;
 `
 
 const About = styled.div`
 text-align: center;
 width: 100%;
 display: block;
-font-size: 1.4rem;
+font-size: 1.3rem;
 color: #909096;
 line-height: 3.2rem;
 border-bottom: 1px solid #282828;
@@ -69,19 +69,16 @@ border-bottom: 1px solid #282828;
 &:active{
     color: #08fdd8;
 }
-
-
 `;
 
 const Skills = styled.div`
 text-align: center;
     width: 100%;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #909096;
     line-height: 3.2rem;
     border-bottom: 1px solid #282828;
-
 
 &:hover,
 &:focus{
@@ -96,7 +93,7 @@ const Work = styled.div`
     text-align: center;
     width: 100%;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #909096;
     line-height: 3.2rem;
     border-bottom: 1px solid #282828;
@@ -114,7 +111,7 @@ const Contact = styled.div`
 text-align: center;
     width: 100%;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #909096;
     line-height: 3.2rem;
     border-bottom: 1px solid #282828;
