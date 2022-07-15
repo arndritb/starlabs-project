@@ -10,7 +10,7 @@ color: #909096;
 font-size: 1.6rem;
 width: 10rem;
 height: 100vh;
-position: absolute;
+position: fixed;
 left: auto;
 top: 0;
 right: 0;
@@ -18,6 +18,7 @@ bottom: 0;
 display: flex;
 flex-direction: column;
 font-family: sf-mono;
+
 
 `;
 
@@ -34,6 +35,7 @@ text-align: center;
 justify-content: center;
 margin-top: 4rem;
 font-weight: 600;
+cursor: pointer;
 `
 
 const Profession = styled.h6`
@@ -52,6 +54,7 @@ align-items: center;
 width: 100%;
 margin-top: 10vh;
 font-weight: 400;
+
 `
 
 const About = styled.div`
@@ -150,6 +153,7 @@ background-color: #ffc6ff;
 
 const Main = () => {
 
+    const landingPage = useRef(null);
     const Aboutpagee = useRef(null);
     const Skillspagee = useRef(null);
     const Workpagee = useRef(null);
@@ -166,7 +170,7 @@ const Main = () => {
         <>
         <Box>
             <Logo>
-                <Name>Arndrit</Name>
+                <Name onClick={() => scrollToSection(landingPage)} >Arndrit</Name>
                 <Profession>Web Developer</Profession>
             </Logo>
 
@@ -183,7 +187,7 @@ const Main = () => {
             <SocialIcons />
         </Box>
 
-            <Landing>Landing</Landing>
+            <Landing ref={landingPage}>Landing</Landing>
             <Aboutpage ref={Aboutpagee} >About</Aboutpage>
             <Skillspage ref={Skillspagee} >Skills</Skillspage>
             <Workpage ref={Workpagee} >Work</Workpage>
