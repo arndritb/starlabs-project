@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import SocialIcons from '../subComponents/SocialIcons';
+import { useRef } from 'react';
+
 
 const Box = styled.div`
 background-color: #181818;
@@ -125,10 +127,43 @@ text-align: center;
 }
 `;
 
-
+const Landing = styled.div`
+height:100vh;
+background-color: #caf0f8;
+`
+const Aboutpage = styled.div`
+height:100vh;
+background-color: #d8f3dc;
+`
+const Skillspage = styled.div`
+height:100vh;
+background-color: #f5cac3;
+`
+const Workpage = styled.div`
+height:100vh;
+background-color: #d8f3dc;
+`
+const Contactpage = styled.div`
+height:100vh;
+background-color: #ffc6ff;
+`
 
 const Main = () => {
+
+    const Aboutpagee = useRef(null);
+    const Skillspagee = useRef(null);
+    const Workpagee = useRef(null);
+    const Contactpagee = useRef(null);
+
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: 'smooth'
+        })
+    }
+
     return(
+        <>
         <Box>
             <Logo>
                 <Name>Arndrit</Name>
@@ -137,16 +172,23 @@ const Main = () => {
 
             
             <Sidebar>
-                <About>// about</About>
-                <Skills>// my skills</Skills>
-                <Work>// work</Work>
-                <Contact>// contact</Contact>
+                <About onClick={() => scrollToSection(Aboutpagee)} >// about</About>
+                <Skills onClick={() => scrollToSection(Skillspagee)} >// my skills</Skills>
+                <Work onClick={() => scrollToSection(Workpagee)} >// work</Work>
+                <Contact onClick={() => scrollToSection(Contactpagee)} >// contact</Contact>
             </Sidebar>
 
             
 
             <SocialIcons />
         </Box>
+
+            <Landing>Landing</Landing>
+            <Aboutpage ref={Aboutpagee} >About</Aboutpage>
+            <Skillspage ref={Skillspagee} >Skills</Skillspage>
+            <Workpage ref={Workpagee} >Work</Workpage>
+            <Contactpage ref={Contactpagee} >Contact</Contactpage>
+        </>
     )
 }
 
