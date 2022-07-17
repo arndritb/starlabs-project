@@ -1,205 +1,109 @@
 import React from 'react';
 import styled from 'styled-components'
+import './main.css';
+//need to import in navbar
 import SocialIcons from '../subComponents/SocialIcons';
-import { useRef } from 'react';
+
+
+//components
+// import Landing from './Landing';
+import Navbar from '../components/Navbar';
 import Landing from './Landing';
 
-const Box = styled.div`
-background-color: #181818;
-color: #909096;
-font-size: 1.6rem;
-width: 10rem;
-height: 100vh;
-position: fixed;
-left: auto;
-top: 0;
-right: 0;
-bottom: 0;
-display: flex;
-flex-direction: column;
-font-family: sf-mono;
-`;
-
-const Logo = styled.div`
-background-color: black;
-height: 13rem;
-justify-content: start;
-`
-
-const Name = styled.h2`
-color: white;
-font-size: 2.7rem;
-text-align: center;
-justify-content: center;
-margin-top: 4rem;
-font-weight: 600;
-cursor: pointer;
-`
-
-const Profession = styled.h6`
-text-align: center;
-margin-top: 3rem;
-font-size: 0.9rem;
-font-weight: 500;
-`
-
-const Sidebar = styled.div`
-cursor: pointer;
-border-top: 1px solid #282828;
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-margin-top: 10vh;
-font-weight: 400;
-`
-
-const About = styled.div`
-text-align: center;
-width: 100%;
-display: block;
-font-size: 1.3rem;
-color: #909096;
-line-height: 3.2rem;
-border-bottom: 1px solid #282828;
 
 
-&:hover,
-&:focus{
-    color: #08fdd8;
-}
-&:active{
-    color: #08fdd8;
-}
-`;
 
-const Skills = styled.div`
-text-align: center;
-    width: 100%;
-    display: block;
-    font-size: 1.3rem;
-    color: #909096;
-    line-height: 3.2rem;
-    border-bottom: 1px solid #282828;
 
-&:hover,
-&:focus{
-    color: #08fdd8;
-}
-&:active{
-    color: #08fdd8;
-}
-`;
 
-const Work = styled.div`
-    text-align: center;
-    width: 100%;
-    display: block;
-    font-size: 1.3rem;
-    color: #909096;
-    line-height: 3.2rem;
-    border-bottom: 1px solid #282828;
 
-&:hover,
-&:focus{
-    color: #08fdd8;
-}
-&:active{
-    color: #08fdd8;
-}
-`;
-
-const Contact = styled.div`
-text-align: center;
-    width: 100%;
-    display: block;
-    font-size: 1.3rem;
-    color: #909096;
-    line-height: 3.2rem;
-    border-bottom: 1px solid #282828;
-
-&:hover,
-&:focus{
-    color: #08fdd8;
-}
-&:active{
-    color: #08fdd8;
-}
-`;
-
-// const Landing = styled.div`
-// height:100vh;
-// background-color: #caf0f8;
+// const Sidebar = styled.div`
+// cursor: pointer;
+// border-top: 1px solid #282828;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// width: 100%;
+// margin-top: 10vh;
+// font-weight: 400;
 // `
-const Aboutpage = styled.div`
-height:100vh;
-background-color: #d8f3dc;
-`
-const Skillspage = styled.div`
-height:100vh;
-background-color: #f5cac3;
-`
-const Workpage = styled.div`
-height:100vh;
-background-color: #d8f3dc;
-`
-const Contactpage = styled.div`
-height:100vh;
-background-color: #ffc6ff;
-`
+
+// const Skills = styled.div`
+// text-align: center;
+//     width: 100%;
+//     display: block;
+//     font-size: 1.3rem;
+//     color: #909096;
+//     line-height: 3.2rem;
+//     border-bottom: 1px solid #282828;
+
+// &:hover,
+// &:focus{
+//     color: #08fdd8;
+// }
+// &:active{
+//     color: #08fdd8;
+//}
+// `;
+
+// const Work = styled.div`
+//     text-align: center;
+//     width: 100%;
+//     display: block;
+//     font-size: 1.3rem;
+//     color: #909096;
+//     line-height: 3.2rem;
+//     border-bottom: 1px solid #282828;
+
+// &:hover,
+// &:focus{
+//     color: #08fdd8;
+// }
+// &:active{
+//     color: #08fdd8;
+// }
+// `;
+
+// const Contact = styled.div`
+// text-align: center;
+//     width: 100%;
+//     display: block;
+//     font-size: 1.3rem;
+//     color: #909096;
+//     line-height: 3.2rem;
+//     border-bottom: 1px solid #282828;
+
+// &:hover,
+// &:focus{
+//     color: #08fdd8;
+// }
+// &:active{
+//     color: #08fdd8;
+// }
+// `;
 
 
-
-const Main = () => {
-
-    const landingPage = useRef(null);
-    const Aboutpagee = useRef(null);
-    const Skillspagee = useRef(null);
-    const Workpagee = useRef(null);
-    const Contactpagee = useRef(null);
-
-    const scrollToSection = (elementRef) => {
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: 'smooth'
-        })
-    }
-
-
-
-
+function Main () {
     return(
         <>
-        <Box>
-            
-            <Logo>
-                <Name>Arndrit</Name>
-                <Profession>Web Developer</Profession>
-            </Logo>
-            
-
-            
-            <Sidebar>
-                <About onClick={() => scrollToSection(Aboutpagee)} >// about</About>
-                <Skills onClick={() => scrollToSection(Skillspagee)} >// my skills</Skills>
-                <Work onClick={() => scrollToSection(Workpagee)} >// work</Work>
-                <Contact onClick={() => scrollToSection(Contactpagee)} >// contact</Contact>
-            </Sidebar>
-
-            
-
-            
-            <SocialIcons />
-        </Box>
-
         
+        <div className='maincontainer'>
 
-            <Landing ref={landingPage} />
+            <div className='leftspace'>
+                <h1>Main</h1>
+                <h1>Main</h1>
+                <h1>Main</h1>
+                <h1>Main</h1>
+                <h1>Main</h1>
+                <h1>Main</h1>
+            </div>
+
+            <div className='navbariright'>
+                <Navbar />
+            </div>
+
             
-            <Aboutpage ref={Aboutpagee} >About</Aboutpage>
-            <Skillspage ref={Skillspagee} >Skills</Skillspage>
-            <Workpage ref={Workpagee} >Work</Workpage>
-            <Contactpage ref={Contactpagee} >Contact</Contactpage>
+        </div>
+
         </>
     )
 }

@@ -1,0 +1,16 @@
+.maincontainer{
+height:100vh;
+background-color: #d8f3dc;
+}
+
+.leftspace{
+    width: 91%;
+    float: left;
+}
+
+.navbariright{
+    /* margin-left: 9%; */
+    background-color: #181818;
+    height: 100vh;
+    float: right;
+}

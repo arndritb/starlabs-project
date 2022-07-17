@@ -1,0 +1,147 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+
+nav{
+  background: #0082e6;
+  /* height: 80px; */
+  width: 100%;
+  /* width: 160px;
+  height: 100%; */
+
+}
+
+nav ul{
+  float: right;
+  /* margin-right: 20px; */
+}
+
+nav ul li{
+  /* display: inline-block; */
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #909096;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #282828;
+  font-weight: 400;
+}
+
+a.active,a:hover{
+  background-color: #e6e6dd;
+  transform: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+
+  nav ul li a{
+    font-size: 16px;
+
+  }  
+}
+
+@media (max-width: 858px){
+
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #181818;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,a:hover{
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  
+}
+
+  
+/* name logo profession */
+  /* .box{
+    background-color: #181818;
+    color: #909096;
+    font-size: 1.6rem;
+    width: 10rem;
+    height: 100vh;
+    position: fixed;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: sf-mono;
+    } */
+    
+    /* .logo{
+    background-color: black;
+    height: 13rem;
+    justify-content: start;
+    }
+    
+    .name{
+    color: white;
+    font-size: 2.7rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    font-weight: 600;
+    cursor: pointer;
+    }
+    
+    .profession{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    } */
+
+    /* name logo profession */
+
