@@ -14,14 +14,14 @@ import data from './Components/Assets/Data/data';
 
 function App() {
 
-  const cards = data.map(item => {
-    return(
-      <Skills 
-        key={item.id}
-        {...item}
-      />
-    )
-  })
+  // const cards = data.map(item => {
+  //   return(
+      // <Skills 
+      //   key={item.id}
+      //   {...item}
+      // />
+  //   )
+  // })
 
 
   return (
@@ -32,9 +32,10 @@ function App() {
             <div className='pages'>
               <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/skills" element={<section className='card--list'>
+                <Route exact path="/skills" element={<Skills />} />
+                {/* <Route exact path="/skills" element={<section className='card--list'>
                   {cards}
-                </section>} />
+                </section>} /> */}
                 <Route exact path="/work" element={<Work />} />
                 <Route exact path="/contact" element={<Contact />} />
               </Routes>
