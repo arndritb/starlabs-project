@@ -1,9 +1,55 @@
 import React from "react";
+import './Work.css'
+
 
 export const Work = () => {
     return(
-        <div>
-            <h1>Work</h1>
+        <div className="workbox">
+            <div className="innerworkbox">
+
+                <div className="timeline-area">
+                    <div className='divi'>
+                        <h2 className='projectname'>arndritb.dev</h2>
+                        <h3>my portfolio;</h3>
+                        <span className='htmldot'></span><span className='language'>HTML</span>
+                    </div>
+
+                    <div className='divi'>
+                        <h2 className='projectname'>Tenzie-Game</h2>
+                        <h3>Game about rolling a dice</h3>
+                        <span className='jsdot' ></span><span>JavaScript</span>
+                    </div>
+
+                    <div className='divi'>
+                        <h2 className='projectname'>Portfolio</h2>
+                        <h3>Portfolio with animations</h3>
+                        <span className='jsdot' ></span><span>JavaScript</span>
+                    </div>
+                </div>
+
+                
+                <div className="timeline-area">
+                    <div className='divi'>
+                        <h2 className='projectname'>arndritb.dev</h2>
+                        <h3>my portfolio;</h3>
+                        <span className='htmldot'></span><span className='language'>HTML</span>
+                    </div>
+
+                    <div className='divi'>
+                        <h2 className='projectname'>Tenzie-Game</h2>
+                        <h3>Game about rolling a dice</h3>
+                        <span className='jsdot' ></span><span>JavaScript</span>
+                    </div>
+
+                    <div className='divi'>
+                        <h2 className='projectname'>Portfolio</h2>
+                        <h3>Portfolio with animations</h3>
+                        <span className='jsdot' ></span><span>JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     )
 }

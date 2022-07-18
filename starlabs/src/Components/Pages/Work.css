@@ -1,0 +1,134 @@
+.workbox{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 10; */
+}
+
+  .innerworkbox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10rem;
+    padding: 1rem 50%;
+    /* font-size: 1.2rem; */
+
+    height: 100%; 
+    /* width: 100%; */
+    max-width: 1500px; 
+    /* background-color: black; */
+    /* border: solid #000 2px;
+    border-radius: 3px;  */
+    /* margin-left: 25%; */
+}
+
+
+
+.timeline-area{
+   margin: 90px auto;
+   width: 360px;
+   border-left: 2px solid black;
+   padding: 0 20px 0 30px;
+}
+
+.divi{
+    background-color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid black;
+    line-height: 1.7;
+    position: relative;
+    height: 110px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.divi::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+
+.divi:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.divi h2{
+    margin: 0;
+    color: #0366d6;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.divi h3{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #586069;
+}
+
+/* .divi h4{
+    margin-top: 20px;
+} */
+
+.language{
+    margin-top: 1600px;
+}
+
+.projectname{
+    color: inherit;
+}
+
+.htmldot{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #e34c26;
+    display: inline-block;
+    top: 1px;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.jsdot{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #f1e05a;
+    display: inline-block;
+    top: 1px;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 990px){
+    .innerworkbox{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 50px;
+        /* padding-top: -200px; */
+    }
+ }

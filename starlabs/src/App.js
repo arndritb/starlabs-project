@@ -9,7 +9,6 @@ import Home from './Components/Pages/Home';
 import Skills from './Components/Pages/Skills';
 import Work from './Components/Pages/Work';
 import Contact from './Components/Pages/Contact';
-import data from './Components/Assets/Data/data';
 
 
 function App() {
