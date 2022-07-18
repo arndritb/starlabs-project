@@ -8,8 +8,6 @@ function NavBar(props){
 
     const handleClick = () => setClick(!click);
 
-    const [darkMode, setDarkMode] = useState(false);
-
     return(
         <>
             <nav className='navbar'>

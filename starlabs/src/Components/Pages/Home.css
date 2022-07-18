@@ -1,18 +1,46 @@
+
 .box{
-    height: 91vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
     z-index: 1;
 }
 
-.innerbox{
+  .innerbox{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 70%; 
+    height: 56.5%; 
      width: 100%;
     max-width: 1200px; 
-    background-color: black;
+    /* background-color: black; */
+     border: solid #000 2px;
+    border-radius: 3px; 
+}
+
+
+.subbox{
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.subbox .pic{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.text{
+    font-size: 36px;
+    padding: 2rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
