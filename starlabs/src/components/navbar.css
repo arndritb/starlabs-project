@@ -1,147 +1,119 @@
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-
-
-nav{
-  background: #0082e6;
-  /* height: 80px; */
-  width: 100%;
-  /* width: 160px;
-  height: 100%; */
-
-}
-
-nav ul{
-  float: right;
-  /* margin-right: 20px; */
-}
-
-nav ul li{
-  /* display: inline-block; */
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: #909096;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #282828;
-  font-weight: 400;
-}
-
-a.active,a:hover{
-  background-color: #e6e6dd;
-  transform: .5s;
-}
-
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 20px;
-  padding-left: 20px;
-  cursor: pointer;
-  display: none;
-}
-
-#check{
-  display: none;
-}
-
-@media (max-width: 952px){
-
-  nav ul li a{
-    font-size: 16px;
-
-  }  
-}
-
-@media (max-width: 858px){
-
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #181818;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  a.active,a:hover{
-    background: none;
-    color: #0082e6;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-
-  
-}
-
-  
-/* name logo profession */
-  /* .box{
-    background-color: #181818;
-    color: #909096;
-    font-size: 1.6rem;
-    width: 10rem;
-    height: 100vh;
-    position: fixed;
-    left: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
+.navbar{
+    background-color: #313131;
+    height: 80px;
     display: flex;
-    flex-direction: column;
-    font-family: sf-mono;
-    } */
-    
-    /* .logo{
-    background-color: black;
-    height: 13rem;
-    justify-content: start;
-    }
-    
-    .name{
-    color: white;
-    font-size: 2.7rem;
-    text-align: center;
     justify-content: center;
-    margin-top: 4rem;
-    font-weight: 600;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+}
+
+.nav-logo{
+    color: #f5f5f6;
+    align-items: center;
+    margin-left: 20px;
     cursor: pointer;
-    }
-    
-    .profession{
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
     text-align: center;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    } */
+    margin-right: 2rem;
+}
 
-    /* name logo profession */
+.nav-links{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+}
 
+.nav-item{
+    line-height: 40px;
+    margin-right: 1rem;
+}
+
+.nav-item:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .7s ease, background-color 0.5s ease;
+}
+
+/* transition osht animacioni */
+
+/* kjo posht osht underline */
+.nav-item:hover:after{
+    width: 100%;
+    background: #f5f5f6;
+}
+
+.nav-item .active{
+    color: #ffffff;
+}
+
+.nav-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background: #313131;
+        left: 0px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+    .nav-item .active{
+        color: #f5f5f6;
+        border: none;
+    }
+
+    .nav-links {
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #f5f5f6;
+    }
+}
