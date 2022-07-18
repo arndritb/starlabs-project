@@ -1,8 +1,10 @@
 .workbox{
-    height: 80vh;
-    display: flex;
+    /* height: 80vh; */
+    /* display: flex; */
+    display: block;
     justify-content: center;
     align-items: center;
+    /* margin-top: 500px; */
     /* z-index: 10; */
 }
 
@@ -12,19 +14,30 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    grid-gap: 10rem;
+    grid-gap: 5rem;
     padding: 1rem 50%;
     /* font-size: 1.2rem; */
 
     height: 100%; 
     /* width: 100%; */
-    max-width: 1500px; 
+    max-width: 1000px; 
     /* background-color: black; */
     /* border: solid #000 2px;
     border-radius: 3px;  */
     /* margin-left: 25%; */
 }
 
+
+.helloja{
+    margin-top: 5%;
+    text-align: center;
+    z-index: 1;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    
+}
 
 
 .timeline-area{
