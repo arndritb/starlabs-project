@@ -1,0 +1,24 @@
+.cont{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.ainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1400px; 
+    /* background-color: black; */
+    padding-top: 20%;
+}
+
+.forma{
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

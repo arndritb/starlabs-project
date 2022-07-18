@@ -11,10 +11,10 @@
     display: flex;
     justify-content: center;
     height: 56.5%; 
-     width: 100%;
+    width: 100%;
     max-width: 1200px; 
     /* background-color: black; */
-     border: solid #000 2px;
+    border: solid #000 2px;
     border-radius: 3px; 
 }
 
@@ -23,6 +23,7 @@
     width: 50%;
     position: relative;
     display: flex;
+    
 }
 
 .subbox .pic{
@@ -44,3 +45,4 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+

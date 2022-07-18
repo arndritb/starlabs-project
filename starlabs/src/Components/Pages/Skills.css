@@ -1,0 +1,68 @@
+.container{
+    height: 100vh;
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     z-index: 1; 
+}
+  .innerboxi{
+    height: 100%; 
+     width: 100%;
+    max-width: 1400px;
+}
+
+.skillsbox{
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    text-transform: uppercase;
+    border: solid #000 4px;
+    border-radius: 3px; 
+    width: 180px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.using{
+    text-transform: uppercase;
+}
+
+.learning{
+    text-transform: uppercase;
+}
+
+.other{
+    text-transform: uppercase;
+}
+
+.react{
+    width: 100px;
+    height: 100px;
+}
+.reac{
+    width: 100px;
+    height: 100px;
+}
+.rea{
+    width: 100px;
+    height: 100px;
+}
+
+.innercontainer {  
+    display: grid;  
+    grid-gap: 200px;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);  
+}
+
+
+.card--image{
+    width: 200px;
+    height: 200px;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
