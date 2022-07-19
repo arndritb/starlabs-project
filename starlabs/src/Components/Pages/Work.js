@@ -1,5 +1,6 @@
 import React from "react";
 import './Work.css'
+import { Link } from 'react-router-dom';
 
 
 export const Work = () => {
@@ -12,19 +13,44 @@ export const Work = () => {
 
                 <div className="timeline-area">
                     <div className='divi'>
-                        <h2 className='projectname'>arndritb.dev</h2>
+
+                        <div
+                            onClick={() => {
+                                window.open("https://github.com/arndritb", "_blank")
+                            }}
+                        >
+                            <h2 className='projectname'>arndritb.dev</h2>
+                        </div>
                         <h3>my portfolio;</h3>
                         <span className='htmldot'></span><span className='language'>HTML</span>
                     </div>
 
+
+
                     <div className='divi'>
-                        <h2 className='projectname'>Tenzie-Game</h2>
+                        
+                        <div 
+                            onClick={() => {
+                                window.open("https://github.com/arndritb", "_blank")
+                            }}
+                        >
+                            <h2 className='projectname'>Tenzie-Game</h2>
+                        </div>
+
                         <h3>Game about rolling a dice</h3>
                         <span className='jsdot' ></span><span>JavaScript</span>
                     </div>
 
                     <div className='divi'>
-                        <h2 className='projectname'>Portfolio</h2>
+                        
+                        <div
+                            onClick={() => {
+                                window.open("https://github.com/arndritb", "_blank")
+                            }}
+                        >
+                            <h2 className='projectname'>Portfolio</h2>
+                        </div>
+
                         <h3>Portfolio with animations</h3>
                         <span className='jsdot' ></span><span>JavaScript</span>
                     </div>
@@ -33,19 +59,44 @@ export const Work = () => {
                 
                 <div className="timeline-area">
                     <div className='divi'>
-                        <h2 className='projectname'>arndritb.dev</h2>
+
+                        <div
+                            onClick={() => {
+                                window.open("https://github.com/arndritb", "_blank")
+                            }}
+                        >
+                            <h2 className='projectname'>arndritb.dev</h2>
+                        </div>
                         <h3>my portfolio;</h3>
                         <span className='htmldot'></span><span className='language'>HTML</span>
                     </div>
 
+
+
                     <div className='divi'>
-                        <h2 className='projectname'>Tenzie-Game</h2>
+                        
+                        <div 
+                            onClick={() => {
+                                window.open("https://github.com/arndritb", "_blank")
+                            }}
+                        >
+                            <h2 className='projectname'>Tenzie-Game</h2>
+                        </div>
+
                         <h3>Game about rolling a dice</h3>
                         <span className='jsdot' ></span><span>JavaScript</span>
                     </div>
 
                     <div className='divi'>
-                        <h2 className='projectname'>Portfolio</h2>
+                        
+                        <div
+                            onClick={() => {
+                                window.open("https://github.com/arndritb", "_blank")
+                            }}
+                        >
+                            <h2 className='projectname'>Portfolio</h2>
+                        </div>
+
                         <h3>Portfolio with animations</h3>
                         <span className='jsdot' ></span><span>JavaScript</span>
                     </div>

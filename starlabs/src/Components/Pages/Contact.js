@@ -2,7 +2,7 @@ import React from "react";
 import '../Pages/Contact.css'
 import emailjs from 'emailjs-com'
 import {Github, Twitter, Facebook } from '../Assets/AllSvgs';
-import { Link} from 'react-router-dom';
+
 
 export const Contact = () => {
 
@@ -74,29 +74,32 @@ export const Contact = () => {
                                 <li className="list-item"><span className="contact-text phone"><a href="tel:049796839" title="Give me a call">049-796-839</a></span></li>
                                 <li className="list-item"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">arndritb@gmail.com</a></span></li>
                             </ul>
-
+ 
                                 <div className="icons">
-                                    <Link 
-                                        // style={{color:'inherit'}} 
-                                        target="_blank" 
-                                        to={{pathname:"https://github.com/arndritb"}} >
+                                    <div
+                                        onClick={() => {
+                                            window.open("https://github.com/arndritb", "_blank")
+                                        }}
+                                    >
                                         <Github width={25} height={25} />
-                                        
-                                    </Link>
+                                    </div>
 
-                                    <Link 
-                                        // style={{color:'inherit'}} 
-                                        target="_blank" 
-                                        to={{pathname:"https://twitter.com/arndritbaj"}}>
+                                    <div
+                                        onClick={() => {
+                                            window.open("https://twitter.com/arndritbaj", "_blank")
+                                        }}
+                                    >
                                         <Twitter width={25} height={25} />
-                                    </Link>
+                                    </div>
 
-                                    <Link 
-                                        // style={{color:'inherit'}} 
-                                        target="_blank" 
-                                        to={{pathname:"https://www.facebook.com/arndrit.b/"}}>
+                                    <div
+                                        onClick={() => {
+                                            window.open("https://www.facebook.com/arndrit.b/", "_blank")
+                                        }}
+                                    >
                                         <Facebook width={25} height={25} />
-                                    </Link>
+                                    </div>
+
                                 </div>
                         </div>
                     </div>
