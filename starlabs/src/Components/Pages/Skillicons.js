@@ -1,5 +1,5 @@
 import React from "react";
-import './Skills.css'
+import '../Pages/Css/Skills.css';
 
 export const Skillicons = (props) => {
     return(

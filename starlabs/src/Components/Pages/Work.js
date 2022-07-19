@@ -1,6 +1,5 @@
 import React from "react";
-import './Work.css'
-import { Link } from 'react-router-dom';
+import '../Pages/Css/Work.css';
 
 
 export const Work = () => {

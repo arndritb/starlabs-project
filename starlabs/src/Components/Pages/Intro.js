@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Me from '../Assets/Images/prof.png'
-import './Home.css';
+import '../Pages/Css/Home.css';
 
 
 const Box = styled.div`
@@ -53,10 +53,7 @@ display: flex;
 
 const Text = styled.div`
 font-size: calc(1em + 1.5vw);
-${'' /* font-type: 'Oswald', sans-serif; */}
     font: 100 45px 'Oswald', sans-serif;
-    ${'' /* text-transform: uppercase; */}
-    ${'' /* letter-spacing: 6px; */}
     color: white;
     padding: 2rem;
     cursor: pointer;

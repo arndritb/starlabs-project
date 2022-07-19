@@ -1,5 +1,6 @@
 import React from "react";
-import './Skills.css';
+// import './Skills.css';
+import '../Pages/Css/Skills.css';
 import { Skillicons } from "./Skillicons";
 
 //using
@@ -23,7 +24,6 @@ import german from '../Assets/Images/german.png'
 export const Skills = () => {
     return(
         <div className="inner">
-            {/* <div className="header"> */}
             <h1 className="headeri">Using</h1>
                 <div className="container">
                     <Skillicons name={'React'} Img={react} />

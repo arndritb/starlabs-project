@@ -1,5 +1,5 @@
 import React from "react";
-import '../Pages/Contact.css'
+import '../Pages/Css/Contact.css'
 import emailjs from 'emailjs-com'
 import {Github, Twitter, Facebook } from '../Assets/AllSvgs';
 

@@ -1,30 +1,18 @@
 .workbox{
-    /* height: 80vh; */
-    /* display: flex; */
     display: block;
     justify-content: center;
     align-items: center;
-    /* margin-top: 500px; */
-    /* z-index: 10; */
 }
 
   .innerworkbox{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     grid-gap: 5rem;
     padding: 1rem 50%;
-    /* font-size: 1.2rem; */
-
     height: 100%; 
-    /* width: 100%; */
     max-width: 1000px; 
-    /* background-color: black; */
-    /* border: solid #000 2px;
-    border-radius: 3px;  */
-    /* margin-left: 25%; */
 }
 
 
@@ -98,10 +86,6 @@
     color: #586069;
 }
 
-/* .divi h4{
-    margin-top: 20px;
-} */
-
 .language{
     margin-top: 1600px;
 }
@@ -144,6 +128,5 @@
     .innerworkbox{
         grid-template-columns: repeat(1, 1fr);
         padding: 2rem 50px;
-        /* padding-top: -200px; */
     }
  }

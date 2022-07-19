@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
-// import {Anchor} from 'antd';
-
-// const {Link} = Anchor;
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //components
 import NavBar from './Components/NavBar';
@@ -16,21 +12,11 @@ import Data from './Components/Pages/Data';
 
 function App() {
 
-  // const cards = data.map(item => {
-  //   return(
-      // <Skills 
-      //   key={item.id}
-      //   {...item}
-      // />
-  //   )
-  // })
-
 
   return (
     <>
         <Router>
             <NavBar />
-
             <div className='pages'>
               <Routes>
                 <Route exact path="/" element={<Home />} />
@@ -41,18 +27,6 @@ function App() {
               </Routes>
             </div>
           </Router>
-{/* 
-          <NavBar />
-
-          <Router>
-          <Routes>
-            <Link href="/" title='Home' />
-            <Link href="/skills" title='skills' />
-            <Link href="/work" title='work' />
-            <Link href="/contact" title='contact' />
-            </Routes>
-          </Router> */}
-
     </>
   );
 }

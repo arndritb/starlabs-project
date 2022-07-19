@@ -13,7 +13,6 @@
     height: 56.5%; 
     width: 100%;
     max-width: 1200px; 
-    /* background-color: black; */
     border: solid #000 2px;
     border-radius: 3px; 
 }
@@ -51,15 +50,8 @@
 }
 
 .ibuild{
-/* font-size: 60px;
-font-weight: 300; */
 color: grey;
-
-
 font: 200 50px 'Oswald', sans-serif;
-/* color: #000; */
-/* text-transform: uppercase; */
-/* letter-spacing: 6px; */
 }
 
 .myname{

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import './Home.css';
-
+import '../Pages/Css/Home.css';
 import { YinYang } from "../Assets/AllSvgs";
 import styled from 'styled-components';
 import Intro from "./Intro";
