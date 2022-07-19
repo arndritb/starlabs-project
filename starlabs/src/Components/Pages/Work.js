@@ -31,7 +31,7 @@ export const Work = () => {
                         
                         <div 
                             onClick={() => {
-                                window.open("https://github.com/arndritb", "_blank")
+                                window.open("https://github.com/arndritb/tenziesgame", "_blank")
                             }}
                         >
                             <h2 className='projectname'>Tenzie-Game</h2>
@@ -45,7 +45,7 @@ export const Work = () => {
                         
                         <div
                             onClick={() => {
-                                window.open("https://github.com/arndritb", "_blank")
+                                window.open("https://github.com/arndritb/portfolio-animation", "_blank")
                             }}
                         >
                             <h2 className='projectname'>Portfolio</h2>
@@ -77,7 +77,7 @@ export const Work = () => {
                         
                         <div 
                             onClick={() => {
-                                window.open("https://github.com/arndritb", "_blank")
+                                window.open("https://github.com/arndritb/tenziesgame", "_blank")
                             }}
                         >
                             <h2 className='projectname'>Tenzie-Game</h2>
@@ -91,7 +91,7 @@ export const Work = () => {
                         
                         <div
                             onClick={() => {
-                                window.open("https://github.com/arndritb", "_blank")
+                                window.open("https://github.com/arndritb/portfolio-animation", "_blank")
                             }}
                         >
                             <h2 className='projectname'>Portfolio</h2>
