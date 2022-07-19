@@ -28,7 +28,14 @@
     color: #fff;
     padding: 1rem;
     position: relative;
-    
+    color: #0366d6;
+
+    font: 300 60px 'Oswald', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+
+   
 }
 
 
@@ -39,7 +46,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: 4px;
-    width: 100px;
+    width: 200px;
     background-color: #2ecc71;
     border-radius: 2px;
 }
@@ -50,8 +57,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem 80px;
+    grid-gap: 1px;
+    padding: 4rem 200px;
     font-size: 1.2rem;
 }
 
@@ -127,8 +134,12 @@
  }
 
  .skill-title h1{
-    color: #000;
+    color: #b1b1b1;
     margin-top: 0.5rem;
+
+    font: 300 25px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
  }
 
 
