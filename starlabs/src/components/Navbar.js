@@ -51,6 +51,15 @@ function NavBar(props){
                                 Contact
                             </NavLink>
                         </li>
+                        <li className='nav-item'>
+                            <NavLink 
+                                exact to="/data" 
+                                activeClassName='active' 
+                                className="nav-links" 
+                                onClick={handleClick} >
+                                Data
+                            </NavLink>
+                        </li>
                     </ul>
 
                     <div className='nav-icon' onClick={handleClick}>
